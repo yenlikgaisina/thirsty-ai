@@ -2,6 +2,17 @@
 
 All notable changes to the Thirsty AI dataset and map. Dataset version is also recorded in `data/sites.json` (`_meta.version`).
 
+## [0.4.0] — 2026-06-11
+### Added
+- Planning application references for 30 schemes (`planning_ref`, `planning_url`, `ref_confidence` in sites.json/sites.csv); 5 honest gaps recorded as "not located", never invented. Table status cells now link to the planning record where a URL exists.
+- Boundary verification via point-in-polygon queries against the official Appointed Water Supply Boundary feature services on the Stream open data portal (streamwaterdata.co.uk, CC BY 4.0).
+### Changed
+- Corrected water company for 2 sites: Orbital M25 J24 (Thames → Affinity) and AiOnX Sutton-in-the-Isle (Cambridge → Anglian). Both remain in seriously water-stressed areas — no change to the 79% headline.
+- Cleared the "boundary uncertain" flag on 5 sites confirmed by the GIS join (ids 14, 20, 21, 29, 35). Dartford (id 33) flag kept: Thames vs South East Water unresolved, but both are seriously stressed so it cannot affect the statistic.
+- Teesworks (Lackenby) status corrected to "Reserved matters approved Aug 2025 (under 2020 outline)" per the council portal record.
+### Fixed
+- Added a real og-image.png (1200×630, dark map + 79%) and og:image:width/height meta tags, so link previews render.
+
 ## [0.3.0] — 2026-06-11
 ### Changed
 - Water-use band now derived from the Government’s “Water use in AI and Data Centres” report (GDSA), Section 2: ~20,000 L/MW/day (cooling-only lower anchor) to ~68,500 L/MW/day (hyperscale upper anchor). Removed the “provisional” label.
