@@ -52,6 +52,8 @@ These are figures for *this register*, which is a best-effort compilation rather
 | `planning_url` | Direct link to the planning record where the reference appears |
 | `ref_confidence` | How the reference was verified: confirmed-portal / confirmed-council / confirmed-decision-letter / confirmed-govuk / confirmed-public-notice / press-cited / partial / not-located |
 
+> **Note on `mw`:** A power figure is recorded for 39 of 72 schemes (disclosed total 9,788 MW ≈ 9.8 GW); 33 schemes disclose none. The PACE West Midlands figure (168 MW) is a three-site portfolio total stored at site level — counting it as a single row is a deliberate, documented choice.
+
 ## Methodology
 
 Each row is a publicly reported UK data centre scheme, compiled from industry trackers, the House of Commons Library, government announcements, regional and local press, and campaign-group coverage. Water-company areas determined to be in *serious water stress* by the Environment Agency's 2021 classification are flagged. Per-site daily water use, where shown in the map, is estimated using broad per-MW ranges drawn from the UK Government's 2025 report on water use in AI and data centres; because cooling technology is rarely disclosed, every figure is a **range** with wide uncertainty, never a single number.
@@ -75,7 +77,7 @@ The per-MW band is derived from the two anchor figures in the Government report�
 
 - Environment Agency / DEFRA — Water stressed areas 2021 classification
 - UK Government — Water use in AI and Data Centres report (2025)
-- House of Commons Library — briefing CBP-10315 (data centres planning policy)
+- House of Commons Library — briefing CBP-10248 (data centres planning policy)
 - DatacenterDynamics, Computer Weekly, Data Centre Review, Blackridge Research
 - Foxglove and other campaign-group coverage; APRS data centre tracker; regional press
 
