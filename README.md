@@ -48,10 +48,19 @@ These are figures for *this register*, which is a best-effort compilation rather
 | `stress` / `water_stressed` | `true` if in an EA 2021 *serious water stress* company area |
 | `flag` / `flags` | Verification notes and caveats for that row |
 | `src` / `source_url` | Source URL |
+| `planning_ref` | Council/PINS planning application reference, or "not located" (never invented) |
+| `planning_url` | Direct link to the planning record where the reference appears |
+| `ref_confidence` | How the reference was verified: confirmed-portal / confirmed-council / confirmed-decision-letter / confirmed-govuk / confirmed-public-notice / press-cited / partial / not-located |
 
 ## Methodology
 
 Each row is a publicly reported UK data centre scheme, compiled from industry trackers, the House of Commons Library, government announcements, regional and local press, and campaign-group coverage. Water-company areas determined to be in *serious water stress* by the Environment Agency's 2021 classification are flagged. Per-site daily water use, where shown in the map, is estimated using broad per-MW ranges drawn from the UK Government's 2025 report on water use in AI and data centres; because cooling technology is rarely disclosed, every figure is a **range** with wide uncertainty, never a single number.
+
+The per-MW band is derived from the two anchor figures in the Government report’s Section 2 table: ~20,000 L/MW/day (an average 100 MW site using ~2 million litres/day, cooling only) up to ~68,500 L/MW/day (a 100 MW hyperscale facility using ~2.5 billion litres/year). People-equivalent comparisons use the report’s own equivalence (~800 people per MW). These figures cover cooling only and exclude water embedded in electricity generation.
+
+**Water-company boundaries.** Boundary-uncertain sites were verified by point-in-polygon queries against the official Appointed Water Supply Boundary feature services published by the water companies on the Stream open data portal (streamwaterdata.co.uk, CC BY 4.0). Thames Water and South East Water do not publish boundary services; sites confirmed inside a neighbouring company’s polygon were assigned to it, and one site (Custodian Dartford) remains flagged — but both candidate companies there are seriously water-stressed, so it cannot affect the headline statistic.
+
+**Planning references.** For the larger schemes we record the council or Planning Inspectorate application reference (`planning_ref`) and a direct link (`planning_url`), with a `ref_confidence` note. References were taken from council portals, committee reports, decision letters, gov.uk and planning press. Where a reference could not be confirmed it is recorded as "not located" — never guessed or invented.
 
 ## Important caveats
 
