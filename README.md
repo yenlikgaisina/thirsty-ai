@@ -77,7 +77,8 @@ The per-MW band is derived from the two anchor figures in the Government report�
 
 - Environment Agency / DEFRA — Water stressed areas 2021 classification
 - UK Government — Water use in AI and Data Centres report (2025)
-- House of Commons Library — briefing CBP-10248 (data centres planning policy)
+- House of Commons Library — briefing CBP-10315, "Data centres: planning policy, sustainability, and resilience" (planning-policy context, NSIP changes, scheme counts)
+- House of Commons Library — briefing CBP-10248, "Future water resources" (2050 supply deficit; water resource management plans do not account for data centre demand)
 - DatacenterDynamics, Computer Weekly, Data Centre Review, Blackridge Research
 - Foxglove and other campaign-group coverage; APRS data centre tracker; regional press
 
